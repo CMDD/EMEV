@@ -1867,7 +1867,7 @@ __webpack_require__.r(__webpack_exports__);
     pagar: function pagar() {
       this.enviando = true;
       var handler = ePayco.checkout.configure({
-        key: '45b960805ced5c27ce34b1600b4b9f54',
+        key: '088362a71f5e8a50b22e5ff53063a220',
         test: false
       });
       var data = {
