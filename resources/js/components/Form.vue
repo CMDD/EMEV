@@ -150,7 +150,7 @@ export default {
         pagar(){
             this.enviando = true;
             var handler = ePayco.checkout.configure({
-  				key: '2c8684f2cd538f573fb7afe0388f7eb3e9721e88',
+  				key: '45b960805ced5c27ce34b1600b4b9f54',
   				test: false
   			})
                 var data={
@@ -189,11 +189,11 @@ export default {
         getValor(){
                 if (this.form.tiempo == 6) {
 
-                    this.form.valor = 45000;
+                    this.form.valor = 25000;
                 }
 
                 if (this.form.tiempo == 12) {
-                    this.form.valor = 75000;
+                    this.form.valor = 41200;
                 }
                 if(this.form.tiempo == 'Seleccione...'){
                     this.form.valor = ''; 
