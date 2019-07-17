@@ -1,7 +1,7 @@
 <template>
 <div class="container">
 <div class="row">
-    <div class="col-6">
+    <div class="col-12">
     <h1>SUSCRIPCIÓN</h1> <hr>
         <form v-on:submit.prevent="pagar">
         <div class="form-row">

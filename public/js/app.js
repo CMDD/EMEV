@@ -37835,7 +37835,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "container" }, [
     _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "col-6" }, [
+      _c("div", { staticClass: "col-12" }, [
         _c("h1", [_vm._v("SUSCRIPCIÓN")]),
         _vm._v(" "),
         _c("hr"),
