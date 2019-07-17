@@ -1,47 +1,47 @@
 <template>
 <div class="container">
 <div class="row">
-    <div >
+    <div class="col-6">
     <h1>SUSCRIPCIÓN</h1> <hr>
         <form v-on:submit.prevent="pagar">
         <div class="form-row">
 
-        <div class="">
+        <div class="col-md-6 mb-3">
             <label>Nombre</label>
             <input type="text" :class=" {'form-control':true,'is-valid':validarName}" required v-model="form.nombre">
             <div class="valid-feedback">
             <!-- Mesaje para validar -->
             </div>
         </div>
-        <div class="">
+        <div class="col-md-6 mb-3">
             <label>Apellido</label>
             <input type="text" :class=" {'form-control':true,'is-valid':validarName}" v-model="form.apellido">
             <div class="valid-feedback">
             <!-- Mesaje para validar -->
             </div>
         </div>
-        <div class="">
+        <div class="col-md-6 mb-3">
             <label>Numero de documento</label>
             <input type="text" :class=" {'form-control':true,'is-valid':validarName}" v-model="form.cedula">
             <div class="valid-feedback">
             <!-- Mesaje para validar -->
             </div>
         </div>
-        <div class="">
+        <div class="col-md-6 mb-3">
             <label>Celular/Tel</label>
             <input type="text" :class=" {'form-control':true,'is-valid':validarName}" required v-model="form.tel">
             <div class="valid-feedback">
             <!-- Mesaje para validar -->
             </div>
         </div>
-        <div class="">
+        <div class="col-md-6 mb-3">
             <label>Correo</label>
             <input type="mail" :class=" {'form-control':true,'is-valid':validarName}" v-model="form.correo">
             <div class="valid-feedback">
             <!-- Mesaje para validar -->
             </div>
         </div>
-         <div class="">
+         <div class="col-md-6 mb-3">
                 <label for="validationServer033">Municipio</label>
                 <select v-model="form.municipio"  id="" :class=" {'form-control':true,'is-valid':validarCiudad}" required>
                     <option value="">Selecione...</option>
@@ -51,7 +51,7 @@
                     <!-- Si no encuentra el municipio, comuniquese con soporte! -->
                 </div>
             </div>
-            <div class="">
+            <div class="col-md-6 mb-3">
                 <label for="validationServer033">Dirección</label>
                 <input type="text" name="" v-model="form.direccion" class="form-control" id="" required>
             </div>
@@ -59,7 +59,7 @@
 
         <div class="form-row">
             
-            <div class="">
+            <div class="col-md-6 mb-3">
                 <label for="validationServer033">Oracional</label>
                 <select v-model="form.oracional" id="" :class=" {'form-control':true,'is-valid':validarCiudad}" required>
                     <option value="" >Seleccione...</option>
@@ -71,7 +71,7 @@
                 
             </div>
             
-            <div class="">
+            <div class="col-md-3 mb-3">
                 <label for="validationServer033">Tiempo</label>
                 <select name="" id="" class="form-control " @change="getValor" v-model="form.tiempo" required> 
                     <option value="">Seleccione...</option>
@@ -82,7 +82,7 @@
                     <!-- Mensaje   -->
                 </div>
             </div>
-            <div class="">
+            <div class="col-md-3 mb-3">
                 <label for="validationServer033">Valor</label>
                  <p class="valor">${{form.valor}}</p>
             </div>
