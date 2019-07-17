@@ -37835,7 +37835,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "container" }, [
     _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "col-12" }, [
+      _c("div", [
         _c("h1", [_vm._v("SUSCRIPCIÓN")]),
         _vm._v(" "),
         _c("hr"),
@@ -37852,7 +37852,7 @@ var render = function() {
           },
           [
             _c("div", { staticClass: "form-row" }, [
-              _c("div", { staticClass: "col-md-6 mb-3" }, [
+              _c("div", {}, [
                 _c("label", [_vm._v("Nombre")]),
                 _vm._v(" "),
                 _c("input", {
@@ -37880,7 +37880,7 @@ var render = function() {
                 _c("div", { staticClass: "valid-feedback" })
               ]),
               _vm._v(" "),
-              _c("div", { staticClass: "col-md-6 mb-3" }, [
+              _c("div", {}, [
                 _c("label", [_vm._v("Apellido")]),
                 _vm._v(" "),
                 _c("input", {
@@ -37908,7 +37908,7 @@ var render = function() {
                 _c("div", { staticClass: "valid-feedback" })
               ]),
               _vm._v(" "),
-              _c("div", { staticClass: "col-md-6 mb-3" }, [
+              _c("div", {}, [
                 _c("label", [_vm._v("Numero de documento")]),
                 _vm._v(" "),
                 _c("input", {
@@ -37936,7 +37936,7 @@ var render = function() {
                 _c("div", { staticClass: "valid-feedback" })
               ]),
               _vm._v(" "),
-              _c("div", { staticClass: "col-md-6 mb-3" }, [
+              _c("div", {}, [
                 _c("label", [_vm._v("Celular/Tel")]),
                 _vm._v(" "),
                 _c("input", {
@@ -37964,7 +37964,7 @@ var render = function() {
                 _c("div", { staticClass: "valid-feedback" })
               ]),
               _vm._v(" "),
-              _c("div", { staticClass: "col-md-6 mb-3" }, [
+              _c("div", {}, [
                 _c("label", [_vm._v("Correo")]),
                 _vm._v(" "),
                 _c("input", {
@@ -37992,7 +37992,7 @@ var render = function() {
                 _c("div", { staticClass: "valid-feedback" })
               ]),
               _vm._v(" "),
-              _c("div", { staticClass: "col-md-6 mb-3" }, [
+              _c("div", {}, [
                 _c("label", { attrs: { for: "validationServer033" } }, [
                   _vm._v("Municipio")
                 ]),
@@ -38055,7 +38055,7 @@ var render = function() {
                 _c("div", {})
               ]),
               _vm._v(" "),
-              _c("div", { staticClass: "col-md-6 mb-3" }, [
+              _c("div", {}, [
                 _c("label", { attrs: { for: "validationServer033" } }, [
                   _vm._v("Dirección")
                 ]),
@@ -38085,7 +38085,7 @@ var render = function() {
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "form-row" }, [
-              _c("div", { staticClass: "col-md-6 mb-3" }, [
+              _c("div", {}, [
                 _c("label", { attrs: { for: "validationServer033" } }, [
                   _vm._v("Oracional")
                 ]),
@@ -38150,7 +38150,7 @@ var render = function() {
                 )
               ]),
               _vm._v(" "),
-              _c("div", { staticClass: "col-md-3 mb-3" }, [
+              _c("div", {}, [
                 _c("label", { attrs: { for: "validationServer033" } }, [
                   _vm._v("Tiempo")
                 ]),
@@ -38209,7 +38209,7 @@ var render = function() {
                 _c("div", { staticClass: "invalid-feedback" })
               ]),
               _vm._v(" "),
-              _c("div", { staticClass: "col-md-3 mb-3" }, [
+              _c("div", {}, [
                 _c("label", { attrs: { for: "validationServer033" } }, [
                   _vm._v("Valor")
                 ]),
