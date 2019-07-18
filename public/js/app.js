@@ -1835,6 +1835,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -1909,6 +1910,10 @@ __webpack_require__.r(__webpack_exports__);
 
       if (this.form.tiempo == 'Seleccione...') {
         this.form.valor = '';
+      }
+
+      if (this.form.tiempo == 1) {
+        this.form.valor = 8000;
       }
     }
   }
@@ -37835,7 +37840,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "container" }, [
     _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "col-6" }, [
+      _c("div", { staticClass: "col-12" }, [
         _c("h1", [_vm._v("Portal de transacción")]),
         _vm._v(" "),
         _c("hr"),
@@ -38202,7 +38207,9 @@ var render = function() {
                     _vm._v(" "),
                     _c("option", { attrs: { value: "12" } }, [
                       _vm._v("Suscripción 12 Meses")
-                    ])
+                    ]),
+                    _vm._v(" "),
+                    _c("option", { attrs: { value: "1" } }, [_vm._v("Unidad ")])
                   ]
                 ),
                 _vm._v(" "),

@@ -1,7 +1,7 @@
 <template>
 <div class="container">
 <div class="row">
-    <div class="col-6">
+    <div class="col-12">
     <h1>Portal de transacción</h1> <hr>
         <form v-on:submit.prevent="pagar">
         <div class="form-row">
@@ -77,6 +77,7 @@
                     <option value="">Seleccione...</option>
                     <option value="6">Suscripción 6 Meses</option>
                     <option value="12">Suscripción 12 Meses</option>
+                    <option value="1">Unidad </option>
                 </select>
                 <div class="invalid-feedback">
                     <!-- Mensaje   -->
@@ -197,7 +198,10 @@ export default {
                 }
                 if(this.form.tiempo == 'Seleccione...'){
                     this.form.valor = ''; 
-                }     
+                }
+                if(this.form.tiempo == 1){
+                    this.form.valor = 8000; 
+                }      
         }
     }
 
