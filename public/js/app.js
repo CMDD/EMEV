@@ -38807,7 +38807,7 @@ var render = function() {
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "form-row" }, [
-              _c("div", { staticClass: "col-md-6 mb-3" }, [
+              _c("div", { staticClass: "col-md-4 mb-3" }, [
                 _c("label", { attrs: { for: "validationServer033" } }, [
                   _vm._v("Oracional")
                 ]),
@@ -38933,7 +38933,7 @@ var render = function() {
                 _c("div", { staticClass: "invalid-feedback" })
               ]),
               _vm._v(" "),
-              _c("div", { staticClass: "col-md-3 mb-3" }, [
+              _c("div", { staticClass: "col-md-6 mb-3" }, [
                 _c("label", { attrs: { for: "validationServer033" } }, [
                   _vm._v("Valor (Incluye gastos de envío)")
                 ]),

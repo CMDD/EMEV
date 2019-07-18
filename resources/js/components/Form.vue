@@ -59,7 +59,7 @@
 
         <div class="form-row">
             
-            <div class="col-md-6 mb-3">
+            <div class="col-md-4 mb-3">
                 <label for="validationServer033">Oracional</label>
                 <select v-model="form.oracional" id="" :class=" {'form-control':true,'is-valid':validarCiudad}" required>
                     <option value="" >Seleccione...</option>
@@ -83,7 +83,7 @@
                     <!-- Mensaje   -->
                 </div>
             </div>
-            <div class="col-md-3 mb-3">
+            <div class="col-md-6 mb-3">
                 <label for="validationServer033">Valor (Incluye gastos de envío)</label>
                  <p class="valor">${{form.valor}}</p>
             </div>
