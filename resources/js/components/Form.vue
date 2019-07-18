@@ -2,7 +2,7 @@
 <div class="container">
 <div class="row">
     <div class="col-6">
-    <h1>SUSCRIPCIÓN</h1> <hr>
+    <h1>Portal de transacción</h1> <hr>
         <form v-on:submit.prevent="pagar">
         <div class="form-row">
 
@@ -75,8 +75,8 @@
                 <label for="validationServer033">Tiempo</label>
                 <select name="" id="" class="form-control " @change="getValor" v-model="form.tiempo" required> 
                     <option value="">Seleccione...</option>
-                    <option value="6">6 Meses</option>
-                    <option value="12">12 Meses</option>
+                    <option value="6">Suscripción 6 Meses</option>
+                    <option value="12">Suscripción 12 Meses</option>
                 </select>
                 <div class="invalid-feedback">
                     <!-- Mensaje   -->
@@ -211,6 +211,9 @@ margin-top: 7%;
 .valor{
     color:green;
     font-size: 21px;
+}
+body{
+    background-color: white;
 }
 </style>
 

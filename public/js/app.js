@@ -6373,7 +6373,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.container{\nmargin-top: 7%;\n}\n.valor{\n    color:green;\n    font-size: 21px;\n}\n", ""]);
+exports.push([module.i, "\n.container{\nmargin-top: 7%;\n}\n.valor{\n    color:green;\n    font-size: 21px;\n}\nbody{\n    background-color: white;\n}\n", ""]);
 
 // exports
 
@@ -37836,7 +37836,7 @@ var render = function() {
   return _c("div", { staticClass: "container" }, [
     _c("div", { staticClass: "row" }, [
       _c("div", { staticClass: "col-6" }, [
-        _c("h1", [_vm._v("SUSCRIPCIÓN")]),
+        _c("h1", [_vm._v("Portal de transacción")]),
         _vm._v(" "),
         _c("hr"),
         _vm._v(" "),
@@ -38197,11 +38197,11 @@ var render = function() {
                     ]),
                     _vm._v(" "),
                     _c("option", { attrs: { value: "6" } }, [
-                      _vm._v("6 Meses")
+                      _vm._v("Suscripción 6 Meses")
                     ]),
                     _vm._v(" "),
                     _c("option", { attrs: { value: "12" } }, [
-                      _vm._v("12 Meses")
+                      _vm._v("Suscripción 12 Meses")
                     ])
                   ]
                 ),
