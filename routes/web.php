@@ -15,5 +15,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/confirmacion', function () {return view('welcome');});
+Route::get('/confirmacion', function () {return view('confirmacion');});
 Route::get('/respuesta', function () {return view('welcome');});
