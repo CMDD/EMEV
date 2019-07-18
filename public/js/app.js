@@ -1875,7 +1875,7 @@ __webpack_require__.r(__webpack_exports__);
         //Parametros compra (obligatorio)
         name: "Suscripción " + this.form.oracional,
         description: 'Suscripción ' + this.form.oracional,
-        invoice: "1234",
+        invoice: null,
         currency: "cop",
         amount: this.form.valor,
         tax_base: "0",
