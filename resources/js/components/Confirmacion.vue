@@ -104,7 +104,7 @@
         </div>
 
         </div>
-        <button v-if="!enviando" class="btn btn-primary" type="submit" >Suscribirme</button>
+        <button v-if="!enviando" class="btn btn-primary" type="submit" >Comprar</button>
         <button v-else  class="btn btn-primary" type="submit" >Enviando...</button>
         </form>
     </div>

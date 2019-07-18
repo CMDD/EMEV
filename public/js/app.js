@@ -2084,8 +2084,8 @@ __webpack_require__.r(__webpack_exports__);
       });
       var data = {
         //Parametros compra (obligatorio)
-        name: "Suscripción " + this.form.oracional,
-        description: 'Suscripción ' + this.form.oracional,
+        name: "Compra " + this.form.oracional,
+        description: 'Compra ' + this.form.oracional,
         invoice: null,
         currency: "cop",
         amount: this.form.valor,
@@ -38493,7 +38493,7 @@ var render = function() {
               ? _c(
                   "button",
                   { staticClass: "btn btn-primary", attrs: { type: "submit" } },
-                  [_vm._v("Suscribirme")]
+                  [_vm._v("Comprar")]
                 )
               : _c(
                   "button",
@@ -38853,20 +38853,20 @@ var render = function() {
                       _vm._v("Seleccione...")
                     ]),
                     _vm._v(" "),
-                    _c("option", { attrs: { value: "Puerta a la palabra" } }, [
-                      _vm._v("Puerta a la palabra")
-                    ]),
-                    _vm._v(" "),
                     _c("option", { attrs: { value: "El man esta vivo" } }, [
                       _vm._v("El man esta vivo")
+                    ]),
+                    _vm._v(" "),
+                    _c("option", { attrs: { value: "Jovenes" } }, [
+                      _vm._v("Jovenes")
                     ]),
                     _vm._v(" "),
                     _c("option", { attrs: { value: "Kids" } }, [
                       _vm._v("Kids")
                     ]),
                     _vm._v(" "),
-                    _c("option", { attrs: { value: "Jovenes" } }, [
-                      _vm._v("Jovenes")
+                    _c("option", { attrs: { value: "Puerta a la palabra" } }, [
+                      _vm._v("Puerta a la palabra")
                     ])
                   ]
                 )
@@ -38935,7 +38935,7 @@ var render = function() {
               _vm._v(" "),
               _c("div", { staticClass: "col-md-3 mb-3" }, [
                 _c("label", { attrs: { for: "validationServer033" } }, [
-                  _vm._v("Valor")
+                  _vm._v("Valor (Incluye gastos de envío)")
                 ]),
                 _vm._v(" "),
                 _c("p", { staticClass: "valor" }, [
@@ -38950,7 +38950,7 @@ var render = function() {
               ? _c(
                   "button",
                   { staticClass: "btn btn-primary", attrs: { type: "submit" } },
-                  [_vm._v("Suscribirme")]
+                  [_vm._v("Comprar")]
                 )
               : _c(
                   "button",

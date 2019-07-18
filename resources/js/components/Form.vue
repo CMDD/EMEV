@@ -63,10 +63,10 @@
                 <label for="validationServer033">Oracional</label>
                 <select v-model="form.oracional" id="" :class=" {'form-control':true,'is-valid':validarCiudad}" required>
                     <option value="" >Seleccione...</option>
-                    <option value="Puerta a la palabra">Puerta a la palabra</option>
                     <option value="El man esta vivo">El man esta vivo</option>
-                    <option value="Kids">Kids</option>
                     <option value="Jovenes">Jovenes</option>
+                    <option value="Kids">Kids</option>
+                    <option value="Puerta a la palabra">Puerta a la palabra</option>
                 </select>
                 
             </div>
@@ -84,7 +84,7 @@
                 </div>
             </div>
             <div class="col-md-3 mb-3">
-                <label for="validationServer033">Valor</label>
+                <label for="validationServer033">Valor (Incluye gastos de envío)</label>
                  <p class="valor">${{form.valor}}</p>
             </div>
 
@@ -104,7 +104,7 @@
         </div>
 
         </div>
-        <button v-if="!enviando" class="btn btn-primary" type="submit" >Suscribirme</button>
+        <button v-if="!enviando" class="btn btn-primary" type="submit" >Comprar</button>
         <button v-else  class="btn btn-primary" type="submit" >Enviando...</button>
         </form>
     </div>
@@ -156,8 +156,8 @@ export default {
   			})
                 var data={
                         //Parametros compra (obligatorio)
-                        name: "Suscripción " + this.form.oracional,
-                        description: 'Suscripción ' + this.form.oracional,
+                        name: "Compra " + this.form.oracional,
+                        description: 'Compra ' + this.form.oracional,
                         invoice: null,
                         currency: "cop",
                         amount: this.form.valor,
