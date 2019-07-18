@@ -174,8 +174,8 @@ export default {
                         extra1: "extra1",
                         extra2: "extra2",
                         extra3: "extra3",
-                        confirmation: "http://secure2.payco.co/prueba_curl.php",
-                        response: "http://secure2.payco.co/prueba_curl.php",
+                        confirmation: "http://suscripcion.elmanestavivo.com/confirmacion",
+                        response: "http://suscripcion.elmanestavivo.com/respuesta",
 
                         //Atributos cliente
                         name_billing: this.form.nombre,
