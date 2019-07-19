@@ -2047,6 +2047,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -6589,7 +6591,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.container{\nmargin-top: 7%;\n}\n.valor{\n    color:green;\n    font-size: 21px;\n}\nbody{\n    background-color: white;\n}\n", ""]);
+exports.push([module.i, "\n.container{\nmargin-top: 7%;\n}\nbody{\n    background-color: white;\n}\n", ""]);
 
 // exports
 
@@ -6608,7 +6610,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.container{\nmargin-top: 7%;\n}\n.valor{\n    color:green;\n    font-size: 21px;\n}\nbody{\n    background-color: white;\n}\n", ""]);
+exports.push([module.i, "\n.container{\nmargin-top: 7%;\n}\n.valor{\n    color:#32016d;\n    font-size: 21px;\n}\nbody{\n    background-color: white;\n}\n", ""]);
 
 // exports
 
@@ -38558,7 +38560,13 @@ var render = function() {
   return _c("div", { staticClass: "container" }, [
     _c("div", { staticClass: "row" }, [
       _c("div", { staticClass: "col-12" }, [
-        _c("h1", [_vm._v("Portal de transacción")]),
+        _c("h1", [_vm._v("¡Adquiere aquí tu Revista El Man Está Vivo!")]),
+        _vm._v(" "),
+        _c("p", [
+          _vm._v(
+            "Ingresa tus datos en el formulario, selecciona la revista de tu preferencia y sigue los pasos para realizar la compra."
+          )
+        ]),
         _vm._v(" "),
         _c("hr"),
         _vm._v(" "),
@@ -38631,7 +38639,7 @@ var render = function() {
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "col-md-6 mb-3" }, [
-                _c("label", [_vm._v("Numero de documento")]),
+                _c("label", [_vm._v("Número de documento")]),
                 _vm._v(" "),
                 _c("input", {
                   directives: [
@@ -38779,7 +38787,7 @@ var render = function() {
               _vm._v(" "),
               _c("div", { staticClass: "col-md-6 mb-3" }, [
                 _c("label", { attrs: { for: "validationServer033" } }, [
-                  _vm._v("Dirección")
+                  _vm._v("Dirección para envío")
                 ]),
                 _vm._v(" "),
                 _c("input", {
@@ -38809,7 +38817,7 @@ var render = function() {
             _c("div", { staticClass: "form-row" }, [
               _c("div", { staticClass: "col-md-4 mb-3" }, [
                 _c("label", { attrs: { for: "validationServer033" } }, [
-                  _vm._v("Oracional")
+                  _vm._v("Revista")
                 ]),
                 _vm._v(" "),
                 _c(
@@ -38854,11 +38862,11 @@ var render = function() {
                     ]),
                     _vm._v(" "),
                     _c("option", { attrs: { value: "El man esta vivo" } }, [
-                      _vm._v("El man esta vivo")
+                      _vm._v("El Man Está Vivo")
                     ]),
                     _vm._v(" "),
                     _c("option", { attrs: { value: "Jovenes" } }, [
-                      _vm._v("Jovenes")
+                      _vm._v("Jóvenes")
                     ]),
                     _vm._v(" "),
                     _c("option", { attrs: { value: "Kids" } }, [

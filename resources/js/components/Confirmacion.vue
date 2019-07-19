@@ -212,10 +212,7 @@ export default {
 .container{
 margin-top: 7%;
 }
-.valor{
-    color:green;
-    font-size: 21px;
-}
+
 body{
     background-color: white;
 }

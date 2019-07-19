@@ -2,7 +2,9 @@
 <div class="container">
 <div class="row">
     <div class="col-12">
-    <h1>Portal de transacción</h1> <hr>
+    <h1>¡Adquiere aquí tu Revista El Man Está Vivo!</h1> 
+    <p>Ingresa tus datos en el formulario, selecciona la revista de tu preferencia y sigue los pasos para realizar la compra.</p>
+    <hr>
         <form v-on:submit.prevent="pagar">
         <div class="form-row">
 
@@ -21,7 +23,7 @@
             </div>
         </div>
         <div class="col-md-6 mb-3">
-            <label>Numero de documento</label>
+            <label>Número de documento</label>
             <input type="text" :class=" {'form-control':true,'is-valid':validarName}" v-model="form.cedula">
             <div class="valid-feedback">
             <!-- Mesaje para validar -->
@@ -52,7 +54,7 @@
                 </div>
             </div>
             <div class="col-md-6 mb-3">
-                <label for="validationServer033">Dirección</label>
+                <label for="validationServer033">Dirección para envío</label>
                 <input type="text" name="" v-model="form.direccion" class="form-control" id="" required>
             </div>
         </div>
@@ -60,11 +62,11 @@
         <div class="form-row">
             
             <div class="col-md-4 mb-3">
-                <label for="validationServer033">Oracional</label>
+                <label for="validationServer033">Revista</label>
                 <select v-model="form.oracional" id="" :class=" {'form-control':true,'is-valid':validarCiudad}" required>
                     <option value="" >Seleccione...</option>
-                    <option value="El man esta vivo">El man esta vivo</option>
-                    <option value="Jovenes">Jovenes</option>
+                    <option value="El man esta vivo">El Man Está Vivo</option>
+                    <option value="Jovenes">Jóvenes</option>
                     <option value="Kids">Kids</option>
                     <option value="Puerta a la palabra">Puerta a la palabra</option>
                 </select>
@@ -213,7 +215,7 @@ export default {
 margin-top: 7%;
 }
 .valor{
-    color:green;
+    color:#32016d;
     font-size: 21px;
 }
 body{
