@@ -96,7 +96,10 @@
         <div class="form-group">
             <div class="custom-control custom-checkbox">
             <input type="checkbox" class="custom-control-input " id="invalidCheck33" required>
-            <label class="custom-control-label" for="invalidCheck33">Acepto terminos y condiciones</label>
+           <label class="custom-control-label" for="invalidCheck33">
+                 <a  href="https://elmanestavivo.com/wp-content/uploads/2019/07/terminos_y_condiciones.pdf" target="_blank" rel="noopener noreferrer">Acepto terminos y condiciones
+            </a>
+                </label>
             </div>
 
         <div class="invalid-feedback">

@@ -1836,6 +1836,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -1930,6 +1933,9 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
 //
 //
 //
@@ -38526,7 +38532,20 @@ var staticRenderFns = [
             staticClass: "custom-control-label",
             attrs: { for: "invalidCheck33" }
           },
-          [_vm._v("Acepto terminos y condiciones")]
+          [
+            _c(
+              "a",
+              {
+                attrs: {
+                  href:
+                    "https://elmanestavivo.com/wp-content/uploads/2019/07/terminos_y_condiciones.pdf",
+                  target: "_blank",
+                  rel: "noopener noreferrer"
+                }
+              },
+              [_vm._v("Acepto terminos y condiciones\n            ")]
+            )
+          ]
         )
       ]),
       _vm._v(" "),
@@ -38989,7 +39008,20 @@ var staticRenderFns = [
             staticClass: "custom-control-label",
             attrs: { for: "invalidCheck33" }
           },
-          [_vm._v("Acepto terminos y condiciones")]
+          [
+            _c(
+              "a",
+              {
+                attrs: {
+                  href:
+                    "https://elmanestavivo.com/wp-content/uploads/2019/07/terminos_y_condiciones.pdf",
+                  target: "_blank",
+                  rel: "noopener noreferrer"
+                }
+              },
+              [_vm._v("Acepto terminos y condiciones\n            ")]
+            )
+          ]
         )
       ]),
       _vm._v(" "),
