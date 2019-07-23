@@ -162,7 +162,7 @@ export default {
                 var data={
                         //Parametros compra (obligatorio)
                         name: "Compra " + this.form.oracional,
-                        description: 'Compra ' + this.form.oracional,
+                        description: 'Compra ' +  this.form.tiempo + this.form.oracional,
                         invoice: null,
                         currency: "cop",
                         amount: this.form.valor,
