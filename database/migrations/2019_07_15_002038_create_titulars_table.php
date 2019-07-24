@@ -19,11 +19,9 @@ class CreateTitularsTable extends Migration
             $table->string('apellido')->nullable();
             $table->string('tel')->nullable();
             $table->string('correo')->nullable();
-            $table->string('municipio')->nullable();
-            $table->string('direccion')->nullable();
-            $table->string('tiempo')->nullable();
-            $table->string('oracional')->nullable();
-            $table->string('valor')->nullable();
+           
+           
+            
             $table->timestamps();
         });
     }
