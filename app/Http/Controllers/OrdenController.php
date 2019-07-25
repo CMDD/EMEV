@@ -45,7 +45,7 @@ class OrdenController extends Controller
         return Datatables::of($orders)
             ->addColumn('btn', function ($orders) {
                 return '
-                <a class="btn btn-primary btn-sm"  href="#/suscripcion/' . $orders->id . '">
+                <a class="btn btn-primary btn-sm"  href="#/suscripcion-web/' . $orders->id . '">
                   <i class="fa fa-eye"></i>
                 </a>
                 <a class="btn btn-danger btn-sm"  href="eliminar_suscripcion/' . $orders->id . '"  onclick="return confirm(\'¿ Desea eliminar el registro seleccionado ?\')">
@@ -57,7 +57,7 @@ class OrdenController extends Controller
     }
 
     public function detalle($id){
-      
+
       return Orden::find($id);
     }
 }
