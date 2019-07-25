@@ -99,7 +99,7 @@
             <div class="custom-control custom-checkbox">
             <input type="checkbox" class="custom-control-input " id="invalidCheck33" required>
             <label class="custom-control-label" for="invalidCheck33">
-                 <a  href="https://elmanestavivo.com/wp-content/uploads/2019/07/terminos_y_condiciones.pdf" target="_blank" rel="noopener noreferrer">Acepto terminos y condiciones
+                 <a  href="https://elmanestavivo.com/wp-content/uploads/2019/07/terminos_y_condiciones.pdf" target="_blank" rel="noopener noreferrer">Acepto términos y condiciones
             </a>
                 </label>
             </div>
@@ -110,7 +110,7 @@
 
         </div>
         <button v-if="!enviando" class="btn btn-primary" type="submit" >Comprar</button>
-        <button v-else  class="btn btn-primary" type="submit" >Enviando...</button>
+        <button v-else  class="btn btn-primary" type="button" >Enviando...</button>
         </form>
     </div>
 </div>
@@ -155,7 +155,12 @@ export default {
 
         pagar(){
             this.enviando = true;
-            var handler = ePayco.checkout.configure({
+            axios.post('/api/orden',this.form).then(res=>{
+                console.log(res.data);
+                
+
+
+                var handler = ePayco.checkout.configure({
   				key: '088362a71f5e8a50b22e5ff53063a220',
   				test: false
   			})
@@ -190,6 +195,9 @@ export default {
                         number_doc_billing: this.form.cedula
                         }
           handler.open(data)
+
+            });
+            
 
         },
         getValor(){

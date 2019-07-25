@@ -14,7 +14,7 @@ class CreateOrdensTable extends Migration
     public function up()
     {
         Schema::create('ordens', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->Increments('id');
             $table->string('estado')->nullable();
             $table->string('ref')->nullable();
 
@@ -22,6 +22,7 @@ class CreateOrdensTable extends Migration
             $table->string('apellido')->nullable();
             $table->string('tel')->nullable();
             $table->string('correo')->nullable();
+            $table->string('cedula')->nullable();
 
             $table->string('tiempo')->nullable();
             $table->string('oracional')->nullable();
@@ -34,6 +35,7 @@ class CreateOrdensTable extends Migration
                   ->references('id')
                   ->on('titulars')
                   ->onDelete('cascade');
+
             $table->timestamps();
         });
     }

@@ -14,11 +14,12 @@ class CreateTitularsTable extends Migration
     public function up()
     {
         Schema::create('titulars', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->Increments('id');
             $table->string('nombre')->nullable();
             $table->string('apellido')->nullable();
             $table->string('tel')->nullable();
             $table->string('correo')->nullable();
+            $table->string('cedula')->nullable();
            
            
             

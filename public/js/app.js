@@ -2085,38 +2085,43 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     pagar: function pagar() {
+      var _this2 = this;
+
       this.enviando = true;
-      var handler = ePayco.checkout.configure({
-        key: '088362a71f5e8a50b22e5ff53063a220',
-        test: false
+      axios.post('/api/orden', this.form).then(function (res) {
+        console.log(res.data);
+        var handler = ePayco.checkout.configure({
+          key: '088362a71f5e8a50b22e5ff53063a220',
+          test: false
+        });
+        var data = {
+          //Parametros compra (obligatorio)
+          name: "Compra " + _this2.form.oracional,
+          description: 'Compra ' + _this2.form.tiempo + _this2.form.oracional,
+          invoice: null,
+          currency: "cop",
+          amount: _this2.form.valor,
+          tax_base: "0",
+          tax: "0",
+          country: "co",
+          lang: "es",
+          //Onpage="false" - Standard="true"
+          external: "true",
+          //Atributos opcionales
+          extra1: "extra1",
+          extra2: "extra2",
+          extra3: "extra3",
+          confirmation: null,
+          response: null,
+          //Atributos cliente
+          name_billing: _this2.form.nombre,
+          address_billing: _this2.form.direccion,
+          type_doc_billing: "cc",
+          mobilephone_billing: _this2.form.tel,
+          number_doc_billing: _this2.form.cedula
+        };
+        handler.open(data);
       });
-      var data = {
-        //Parametros compra (obligatorio)
-        name: "Compra " + this.form.oracional,
-        description: 'Compra ' + this.form.oracional,
-        invoice: null,
-        currency: "cop",
-        amount: this.form.valor,
-        tax_base: "0",
-        tax: "0",
-        country: "co",
-        lang: "es",
-        //Onpage="false" - Standard="true"
-        external: "true",
-        //Atributos opcionales
-        extra1: "extra1",
-        extra2: "extra2",
-        extra3: "extra3",
-        confirmation: null,
-        response: null,
-        //Atributos cliente
-        name_billing: this.form.nombre,
-        address_billing: this.form.direccion,
-        type_doc_billing: "cc",
-        mobilephone_billing: this.form.tel,
-        number_doc_billing: this.form.cedula
-      };
-      handler.open(data);
     },
     getValor: function getValor() {
       if (this.form.tiempo == 6) {
@@ -38981,7 +38986,7 @@ var render = function() {
                 )
               : _c(
                   "button",
-                  { staticClass: "btn btn-primary", attrs: { type: "submit" } },
+                  { staticClass: "btn btn-primary", attrs: { type: "button" } },
                   [_vm._v("Enviando...")]
                 )
           ]
@@ -39019,7 +39024,7 @@ var staticRenderFns = [
                   rel: "noopener noreferrer"
                 }
               },
-              [_vm._v("Acepto terminos y condiciones\n            ")]
+              [_vm._v("Acepto términos y condiciones\n            ")]
             )
           ]
         )
