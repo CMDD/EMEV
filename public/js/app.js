@@ -6641,7 +6641,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.container{\nmargin-top: 7%;\n}\n.valor{\n    color:#32016d;\n    font-size: 21px;\n}\nbody{\n    background-color: white;\n}\n", ""]);
+exports.push([module.i, "\n.container{\nmargin-top: 7%;\n}\n.valor{\n    color:#32016d;\n    font-size: 21px;\n}\n.titulo{\n    color:#32016d;\n}\nbody{\n    background-color: white;\n}\n", ""]);
 
 // exports
 
@@ -38604,7 +38604,9 @@ var render = function() {
   return _c("div", { staticClass: "container" }, [
     _c("div", { staticClass: "row" }, [
       _c("div", { staticClass: "col-12" }, [
-        _c("h1", [_vm._v("¡Adquiere aquí tu Revista El Man Está Vivo!")]),
+        _c("h1", { staticClass: "titulo" }, [
+          _vm._v("¡Adquiere aquí tu Revista El Man Está Vivo!")
+        ]),
         _vm._v(" "),
         _c("p", [
           _vm._v(
