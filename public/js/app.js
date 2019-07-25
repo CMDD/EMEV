@@ -38768,7 +38768,7 @@ var render = function() {
               _vm._v(" "),
               _c("div", { staticClass: "col-md-6 mb-3" }, [
                 _c("label", { attrs: { for: "validationServer033" } }, [
-                  _vm._v("Ciudad/Departamento")
+                  _vm._v("Ciudad / Departamento")
                 ]),
                 _vm._v(" "),
                 _c(

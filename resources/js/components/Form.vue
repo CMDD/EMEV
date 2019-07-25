@@ -44,7 +44,7 @@
             </div>
         </div>
          <div class="col-md-6 mb-3">
-                <label for="validationServer033">Ciudad/Departamento</label>
+                <label for="validationServer033">Ciudad / Departamento</label>
                 <select v-model="form.municipio"  id="" :class=" {'form-control':true,'is-valid':validarCiudad}" required>
                     <option value="">Selecione...</option>
                     <option :value="municipio.nombre" v-for="municipio in municipios" :key="municipio.id">{{municipio.nombre}}</option>
