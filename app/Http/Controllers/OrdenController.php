@@ -36,4 +36,8 @@ class OrdenController extends Controller
 
         return $request;
     }
+
+    public function ordenes(){
+        return Orden::all();
+    }
 }
