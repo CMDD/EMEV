@@ -55,4 +55,9 @@ class OrdenController extends Controller
              ->rawColumns(['btn'])
              ->make(true);
     }
+
+    public function detalle($id){
+      
+      return Orden::find($id);
+    }
 }
