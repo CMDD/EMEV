@@ -1,5 +1,5 @@
 <IfModule mod_rewrite.c>
-Header set Access-Control-Allow-Headers "Content-Type, X-CSRF-TOKEN"
+
     <IfModule mod_negotiation.c>
         Options -MultiViews -Indexes
     </IfModule>

@@ -57,6 +57,17 @@
                 <label for="validationServer033">Dirección para envío</label>
                 <input type="text" name="" v-model="form.direccion" class="form-control" id="" required>
             </div>
+             <div class="col-md-6 mb-3">
+                <label for="validationServer033">Metodo de pago</label>
+                <select v-model="form.metodo"  id="" class="form-control" required>
+                    <option value="" >Selecione...</option>
+                    <option value="Efectivo">Efectivo (Baloto, Efecty)</option>
+                    <option value="Tarjeta">Tarjetas (Débito, Credito , PSE) </option>
+                </select>
+                <div class="">
+                    <!-- Si no encuentra el municipio, comuniquese con soporte! -->
+                </div>
+            </div>
         </div>
 
         <div class="form-row">
@@ -126,6 +137,9 @@
 export default {
     data(){
         return{
+            efectivo:'467642f772c8d561e8f53d3f7013c332',
+            tarjeta:'088362a71f5e8a50b22e5ff53063a220',
+            key:'467642f772c8d561e8f53d3f7013c332',
             municipios:[],
             enviando:false,
             validarName:false,
@@ -141,6 +155,7 @@ export default {
              tel:'',
              municipio:'',
              direccion:'',
+             metodo:'',
              
 
             }
@@ -155,13 +170,16 @@ export default {
 
         pagar(){
             this.enviando = true;
+            if(this.form.metodo === 'Tarjeta'){
+                this.key = this.tarjeta;
+            }
             axios.post('/api/orden',this.form).then(res=>{
                 console.log(res.data);
                 
 
 
                 var handler = ePayco.checkout.configure({
-  				key: '088362a71f5e8a50b22e5ff53063a220',
+  				key: this.key,
   				test: false
   			})
                 var data={

@@ -2055,9 +2055,23 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
+      efectivo: '467642f772c8d561e8f53d3f7013c332',
+      tarjeta: '088362a71f5e8a50b22e5ff53063a220',
+      key: '467642f772c8d561e8f53d3f7013c332',
       municipios: [],
       enviando: false,
       validarName: false,
@@ -2072,7 +2086,8 @@ __webpack_require__.r(__webpack_exports__);
         correo: '',
         tel: '',
         municipio: '',
-        direccion: ''
+        direccion: '',
+        metodo: ''
       }
     };
   },
@@ -2088,10 +2103,15 @@ __webpack_require__.r(__webpack_exports__);
       var _this2 = this;
 
       this.enviando = true;
+
+      if (this.form.metodo === 'Tarjeta') {
+        this.key = this.tarjeta;
+      }
+
       axios.post('/api/orden', this.form).then(function (res) {
         console.log(res.data);
         var handler = ePayco.checkout.configure({
-          key: '088362a71f5e8a50b22e5ff53063a220',
+          key: _this2.key,
           test: false
         });
         var data = {
@@ -38835,6 +38855,62 @@ var render = function() {
                     }
                   }
                 })
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-md-6 mb-3" }, [
+                _c("label", { attrs: { for: "validationServer033" } }, [
+                  _vm._v("Metodo de pago")
+                ]),
+                _vm._v(" "),
+                _c(
+                  "select",
+                  {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.form.metodo,
+                        expression: "form.metodo"
+                      }
+                    ],
+                    staticClass: "form-control",
+                    attrs: { id: "", required: "" },
+                    on: {
+                      change: function($event) {
+                        var $$selectedVal = Array.prototype.filter
+                          .call($event.target.options, function(o) {
+                            return o.selected
+                          })
+                          .map(function(o) {
+                            var val = "_value" in o ? o._value : o.value
+                            return val
+                          })
+                        _vm.$set(
+                          _vm.form,
+                          "metodo",
+                          $event.target.multiple
+                            ? $$selectedVal
+                            : $$selectedVal[0]
+                        )
+                      }
+                    }
+                  },
+                  [
+                    _c("option", { attrs: { value: "" } }, [
+                      _vm._v("Selecione...")
+                    ]),
+                    _vm._v(" "),
+                    _c("option", { attrs: { value: "Efectivo" } }, [
+                      _vm._v("Efectivo (Baloto, Efecty)")
+                    ]),
+                    _vm._v(" "),
+                    _c("option", { attrs: { value: "Tarjeta" } }, [
+                      _vm._v("Tarjetas (Débito, Credito , PSE) ")
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c("div", {})
               ])
             ]),
             _vm._v(" "),
