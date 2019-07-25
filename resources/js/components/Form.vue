@@ -2,7 +2,7 @@
 <div class="container">
 <div class="row">
     <div class="col-12">
-    <h1>¡Adquiere aquí tu Revista El Man Está Vivo!</h1> 
+    <h1 class="titulo">¡Adquiere aquí tu Revista El Man Está Vivo!</h1> 
     <p>Ingresa tus datos en el formulario, selecciona la revista de tu preferencia y sigue los pasos para realizar la compra.</p>
     <hr>
         <form v-on:submit.prevent="pagar">
@@ -246,6 +246,9 @@ margin-top: 7%;
 .valor{
     color:#32016d;
     font-size: 21px;
+}
+.titulo{
+    color:#32016d;
 }
 body{
     background-color: white;
