@@ -23,6 +23,10 @@ class CreateOrdensTable extends Migration
             $table->string('tel')->nullable();
             $table->string('correo')->nullable();
             $table->string('cedula')->nullable();
+            
+            $table->string('fecha_pago')->nullable();
+            $table->string('fecha_inicio')->nullable();
+            $table->string('fecha_corte')->nullable();
 
             $table->string('tiempo')->nullable();
             $table->string('oracional')->nullable();
