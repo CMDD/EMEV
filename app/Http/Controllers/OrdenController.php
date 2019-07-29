@@ -64,7 +64,7 @@ class OrdenController extends Controller
     public function edit(Request $request){
       $orden = Orden::find($request->id);
       $orden->estado = $request->estado;
-      $request->save();
+      $orden->save();
       return 200;
 
     }
