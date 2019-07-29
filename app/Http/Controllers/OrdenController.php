@@ -64,6 +64,7 @@ class OrdenController extends Controller
     public function edit(Request $request){
       $orden = Orden::find($request->id);
       $orden->estado = $request->estado;
+      $orden->numero_factura = $request->numero_factura;
       $orden->save();
       return 200;
 
