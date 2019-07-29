@@ -40,7 +40,7 @@ class OrdenController extends Controller
 
     public function ordenes(){
 
-        $orders = Orden::all();
+        $orders = Orden::orderBy('id','DESC');
 
         return Datatables::of($orders)
             ->addColumn('btn', function ($orders) {
