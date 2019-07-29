@@ -13,7 +13,10 @@ class AddCampoMigracion extends Migration
      */
     public function up()
     {
-        //
+        Schema::table('ordens', function (Blueprint $table) {
+          $table->string('numero_factura')->nullable();
+          
+      });
     }
 
     /**
