@@ -22,3 +22,4 @@ Route::get('ordenes','OrdenController@ordenes');
 Route::get('orden/{id}','OrdenController@detalle');
 Route::get('municipios','MunicipiosController@index');
 Route::post('orden','OrdenController@store');
+Route::post('edit-orden','OrdenController@edit');
