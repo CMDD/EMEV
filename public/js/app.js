@@ -2149,7 +2149,7 @@ __webpack_require__.r(__webpack_exports__);
       }
 
       if (this.form.tiempo == 12) {
-        this.form.valor = 41200;
+        this.form.valor = 41900;
       }
 
       if (this.form.tiempo == 'Seleccione...') {
