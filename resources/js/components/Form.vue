@@ -225,7 +225,7 @@ export default {
                 }
 
                 if (this.form.tiempo == 12) {
-                    this.form.valor = 41200;
+                    this.form.valor = 41900;
                 }
                 if(this.form.tiempo == 'Seleccione...'){
                     this.form.valor = ''; 
