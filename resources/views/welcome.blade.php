@@ -24,7 +24,6 @@
     </head>
     <body>
         <div id="app">
-        <h1>Hola</h1>
             <elman></elman>
         </div>
         <script type="text/javascript" src="https://checkout.epayco.co/checkout.js">   </script>
