@@ -40,7 +40,7 @@ class OrdenController extends Controller
 
     public function ordenes($tipo){
 
-        $orders = Orden::where('estado',$tipo)->orderBy('id','ASC')->get();
+        $orders = Orden::where('estado',$tipo)->orderBy('id','DESC')->get();
 
         return Datatables::of($orders)
             ->addColumn('btn', function ($orders) {
